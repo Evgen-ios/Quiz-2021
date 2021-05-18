@@ -234,7 +234,18 @@
                             <constraint firstItem="Rj3-Vw-7GX" firstAttribute="centerY" secondItem="alO-Pq-XKY" secondAttribute="centerY" constant="32" id="vfr-hO-Qyr"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="ofw-9I-75F"/>
+                    <navigationItem key="navigationItem" id="ofw-9I-75F">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="A4e-B6-GZ9">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Mp4-Vy-4qg">
+                                <rect key="frame" x="-23" y="-15" width="86" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="DELETE ME"/>
+                                <connections>
+                                    <segue destination="3zY-CB-scq" kind="show" id="O1Y-AF-k7x"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="3zY-CB-scq" kind="show" id="Kuf-6a-wnA"/>
                     </connections>
@@ -243,19 +254,50 @@
             </objects>
             <point key="canvasLocation" x="1748" y="94"/>
         </scene>
-        <!--Question View Controller-->
+        <!--Results View Controller-->
         <scene sceneID="wB0-vl-dna">
             <objects>
-                <viewController id="3zY-CB-scq" customClass="QuestionViewController" customModule="Quiz_2021" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3zY-CB-scq" customClass="ResultsViewController" customModule="Quiz_2021" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XqP-MD-Cjt">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="0yF-p7-Je0">
+                                <rect key="frame" x="20" y="331" width="350" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L1M-2k-YQD">
+                                        <rect key="frame" x="116.66666666666666" y="0.0" width="116.66666666666666" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FkH-Wn-bXx">
+                                        <rect key="frame" x="151" y="104" width="48" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="oex-4U-Ajq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0yF-p7-Je0" firstAttribute="leading" secondItem="oex-4U-Ajq" secondAttribute="leading" constant="20" id="Vt1-hc-N14"/>
+                            <constraint firstItem="0yF-p7-Je0" firstAttribute="centerY" secondItem="XqP-MD-Cjt" secondAttribute="centerY" id="Zi3-2Z-IcW"/>
+                            <constraint firstItem="oex-4U-Ajq" firstAttribute="trailing" secondItem="0yF-p7-Je0" secondAttribute="trailing" constant="20" id="r8z-6g-4FC"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="fLF-Ok-VOB"/>
+                    <navigationItem key="navigationItem" id="fLF-Ok-VOB">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="SHL-S4-gk8">
+                            <connections>
+                                <segue destination="zoA-3L-RY4" kind="unwind" unwindAction="unwind:" id="GYZ-Z3-PtZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6U8-N2-PL2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="zoA-3L-RY4" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2572" y="94"/>
         </scene>
@@ -279,6 +321,9 @@
             <point key="canvasLocation" x="935.04672897196258" y="93.952483801295898"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="O1Y-AF-k7x"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
