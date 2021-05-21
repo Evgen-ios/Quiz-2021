@@ -237,7 +237,7 @@
                     <navigationItem key="navigationItem" id="ofw-9I-75F">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="A4e-B6-GZ9">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Mp4-Vy-4qg">
-                                <rect key="frame" x="-23" y="-15" width="86" height="30"/>
+                                <rect key="frame" x="288" y="13" width="86" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="DELETE ME"/>
                                 <connections>
