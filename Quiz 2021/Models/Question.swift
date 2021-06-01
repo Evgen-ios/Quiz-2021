@@ -19,7 +19,7 @@ struct Question {
             Answer(text: "Морковку", type: .rabbit),
             Answer(text: "Кукурузу", type: .turtle),
         ]),
-        Question(text: "Что вы любите делать? ", type: .multiply, answers: [
+        Question(text: "Что вы любите делать? ", type: .multiple, answers: [
             Answer(text: "Плавать", type: .cat),
             Answer(text: "Спать", type: .dog),
             Answer(text: "Обниматься", type: .rabbit),
