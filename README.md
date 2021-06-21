@@ -6,7 +6,7 @@
 ## Icon
 ![Screenshots](https://github.com/Evgen-ios/Quiz-2021/blob/main/Quiz%202021/App/Assets.xcassets/AppIcon.appiconset/256.png?raw=true)
 
-## Screenhots
+## Screenshots
 ![Screenshots](https://github.com/Evgen-ios/Quiz-2021/blob/main/Quiz%202021/Screenshots/10.59.45.png?raw=true)
 ![Screenshots](https://github.com/Evgen-ios/Quiz-2021/blob/main/Quiz%202021/Screenshots/10.59.58.png?raw=true)
 ![Screenshots](https://github.com/Evgen-ios/Quiz-2021/blob/main/Quiz%202021/Screenshots/11.00.10.png?raw=true)
